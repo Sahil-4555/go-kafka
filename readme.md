@@ -35,7 +35,7 @@ Open a terminal in the folder where Kafka is downloaded, and then run ZooKeeper 
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 ```
 
-## Start Kafka Borker
+## Start Kafka Broker
 
 Open another terminal in the folder where kafka is downloaded, and start the kafka server using the following command:
 
