@@ -23,7 +23,7 @@ Install the required dependencies:
 go mod tidy
 ```
 
-Make sure you have Kafka running on localhost:9092 or update the kafkaBrokers variable in main.go with your Kafka broker addresses.
+Make sure you have Kafka running on `localhost:9092` or update the `kafkaBrokers` variable in `main.go` with your Kafka broker addresses.
 
 ## Start ZooKeeper
 
@@ -61,14 +61,14 @@ The server will start listening on `http://localhost:3000`.
 
 ## Endpoints
 
-To send data to the Kafka producer, make a GET request to the /producer endpoint with a message as a parameter.
+To send data to the Kafka producer, make a GET request to the `/producer` endpoint with a message as a parameter.
 
 ```
 // GET METHOD
 http://localhost:3000/producer/:message
 ```
 
-To receive data from the Kafka consumer, make a GET request to the /consumer endpoint. The endpoint will respond with the last received message from the Kafka consumer or a default message if no message is available within 4 seconds.
+To receive data from the Kafka consumer, make a GET request to the `/consumer` endpoint. The endpoint will respond with the last received message from the Kafka consumer or a default message if no message is available within 4 seconds.
 
 ```
 // GET METHOD
